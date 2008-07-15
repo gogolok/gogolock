@@ -11,4 +11,14 @@
 
 @implementation AppController
 
+- (id)init
+{
+	NSLog(@"AppController::init");
+	
+	if( ![super init] )
+		return nil;
+
+	return self;
+}
+
 @end
