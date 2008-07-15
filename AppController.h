@@ -13,4 +13,6 @@
 
 }
 
+- (void)registerGlobalShortCutForLocking;
+
 @end
