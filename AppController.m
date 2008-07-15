@@ -51,5 +51,17 @@ OSStatus globalShortCutForLockingHandler(EventHandlerCallRef nextHandler, EventR
 {
 	NSLog(@"Lock screen!");
 	
+	
+	NSTask *task = [[NSTask alloc] init];
+	
+	[task setLaunchPath:@"/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources/CGSession"];
+	
+	NSArray *args = [NSArray arrayWithObject:@"-suspend"];
+	[task setArguments:args];
+	
+	[task launch];
+	
+	[task release];	
+	
 	return noErr;
 }
