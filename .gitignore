@@ -1,1 +1,4 @@
+GogoLock.xcodeproj/*.mode1v3
+GogoLock.xcodeproj/*.pbxuser
+
 build/**/*
