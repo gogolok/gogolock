@@ -45,6 +45,15 @@ OSStatus globalShortCutForLockingHandler(EventHandlerCallRef nextHandler, EventR
 	RegisterEventHotKey(124, cmdKey + optionKey, g_HotKeyID, GetApplicationEventTarget(), 0, &g_HotKeyRef);
 }
 
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication hasVisibleWindows:(BOOL)flag
+{
+	NSLog(@"dock clicked");
+	
+	lockScreen();
+	
+	return YES;
+}
+
 @end
 
 OSStatus globalShortCutForLockingHandler(EventHandlerCallRef nextHandler, EventRef theEvent, void* userData)

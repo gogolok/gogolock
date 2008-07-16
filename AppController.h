@@ -15,6 +15,9 @@
 
 - (void)registerGlobalShortCutForLocking;
 
+/* NSApplication delegate functions */
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication hasVisibleWindows:(BOOL)flag;
+
 @end
 
 void lockScreen();
