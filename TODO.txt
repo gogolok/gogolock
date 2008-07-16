@@ -1,1 +1,2 @@
 - use Sparkle for software updates, http://sparkle.andymatuschak.org/
+- preference panel to set global shortcut
