@@ -52,6 +52,10 @@ body {
 	font-size: 10pt;
 }
 
+#downloadimage {
+  text-align: center;
+}
+
 #footnote {
 	text-align:     center;
 	font-size:      12px;
