@@ -49,8 +49,14 @@ OSStatus globalShortCutForLockingHandler(EventHandlerCallRef nextHandler, EventR
 
 OSStatus globalShortCutForLockingHandler(EventHandlerCallRef nextHandler, EventRef theEvent, void* userData)
 {
-	NSLog(@"Lock screen!");
+	lockScreen();
 	
+	return noErr;
+}
+
+void lockScreen()
+{
+	NSLog(@"Lock screen!");
 	
 	NSTask *task = [[NSTask alloc] init];
 	
@@ -61,7 +67,5 @@ OSStatus globalShortCutForLockingHandler(EventHandlerCallRef nextHandler, EventR
 	
 	[task launch];
 	
-	[task release];	
-	
-	return noErr;
+	[task release];
 }

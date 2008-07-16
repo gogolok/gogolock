@@ -16,3 +16,5 @@
 - (void)registerGlobalShortCutForLocking;
 
 @end
+
+void lockScreen();
